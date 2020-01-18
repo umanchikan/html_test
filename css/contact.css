@@ -1,0 +1,173 @@
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.container{
+  width: 980px;
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+}
+
+/* 追記　 */
+ul {
+  /* 余白を削除 */
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  /* リスト先頭の黒丸を削除 */
+  list-style: none;
+}
+
+/* header ホーム〜お問い合わせ */
+  .header {
+    background-color: #F5B4B3;
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+ul.top_menu {
+    float:right;
+  }
+
+/* paddingのコードを削除し、widthを追記 */
+  .top_menu li {
+    width: auto;
+    float:left;
+    }
+
+    /* displayとpaddingを追記　*/
+    .top_menu li a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 15px;
+    }
+
+    /* マウスをかざすとアンダーライン　*/
+    .top_menu li a:hover {
+      text-decoration: underline;
+    }
+
+/* header企業ロゴ　DIVEの横幅 */
+  .logo_image {
+    width: 110px;
+    float: left;
+    margin: 0;
+}
+
+/* 画像追加 */
+  .image_area {
+    width: 100%;
+}
+
+.wrapper{
+  margin-top: 10px;
+  padding-bottom: 100px;
+}
+
+.side_menu{
+  width: 300px;
+  float: left;
+}
+
+.side_menu li{
+  background-color: #F5B4B3;
+  height: 6rem;
+  margin-bottom: 10px;
+}
+
+.side_menu li:hover{
+  opacity: 0.6;
+}
+
+.side_menu li a{
+  font-size: 2rem;
+  color:#fff;
+  text-decoration: none;
+  display: block;
+  padding: 2rem;
+}
+
+.side_menu .point{
+  background-color: #FCECEC;
+}
+
+.side_menu .point a{
+  color: #4D4D4D;
+}
+
+.banner img{
+  width: 100%;
+}
+
+.banner:hover{
+  opacity: 0.6;
+}
+
+.banner{
+  margin-top: 20px;
+}
+
+
+.content{
+  width: 660px;
+  float: left;
+  font-size: 1.5rem;
+  height: 200px;
+  margin-left: 20px;
+
+}
+
+.question th{
+  width:150px;
+  height: 7rem;
+}
+
+.banner_content{
+  /*　上部のマージンを設定　*/
+  margin-top: 10px;
+  /*　<table>のように振舞う */
+  display: table;
+}
+
+.banner_content p {
+  /*　<table>のように振舞う */
+  display: table-cell;
+}
+
+.banner_content p img {
+/* 画像サイズの修正　*/
+width: 100%;
+}
+
+.footer{
+  background-color: #4D4D4D;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: table;
+}
+
+.footer p {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+/*　下に入られるの防止　*/
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
