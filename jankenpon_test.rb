@@ -1,11 +1,32 @@
 #自分の手
-require '/Users/chiakisaito/workspace/DIVE/janken_test_player.rb'
+class Player
+  def player
+    puts "数字を入力してください"
+    puts "0: グー"
+    puts "1: チョキ"
+    puts "2: パー"
+    
+    p_hand = gets.chomp
+    until p_hand == "0" ||
+          p_hand == "1" ||
+          p_hand == "2" do
+      puts "じゃんけんの手を入力してください"
+      p_hand = gets.chomp
+    end
+    p_hand.to_i
+  end
+  end
 player_hand = Player.new
 @player_hand =  player_hand.player
 
 
 #相手の手
-require "/Users/chiakisaito/workspace/DIVE/janken_test_enemy.rb"
+class Enemy
+  def enemy
+    enemy_hands = [0, 1, 2]
+    enemy_hands.shuffle[0]
+  end
+  end
 enemy_hand = Enemy.new
 @enemy_hand = enemy_hand.enemy
 
