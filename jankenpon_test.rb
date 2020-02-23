@@ -1,4 +1,4 @@
-#自分の手
+#自分の手のコード
 class Player
   def player
     puts "数字を入力してください"
@@ -20,7 +20,7 @@ player_hand = Player.new
 @player_hand =  player_hand.player
 
 
-#相手の手
+#相手の手のコード
 class Enemy
   def enemy
     enemy_hands = [0, 1, 2]
